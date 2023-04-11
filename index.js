@@ -16,9 +16,10 @@ function* arrayRandomGenerator(arr) {
   let prev;
   while (true) {
     while (random === prev) {
-      random = Math.floor(Math.random() * 6);
+      random = Math.floor(Math.random() * arr.length);
     }
     prev = random;
+    console.log(random);
     yield arr[random];
   }
 }
