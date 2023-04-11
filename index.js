@@ -28,7 +28,7 @@ const buttonDisableToggle = arrayLoopGenerator([
   () => confidenceButton.removeAttribute("disabled"),
 ]);
 
-const messages = arrayLoopGenerator([
+const messages = arrayRandomGenerator([
   "개 쳐발랐죠?",
   "아무것도 못하죠?",
   "시험 당일 새벽 4시, 어디선가 자신감이 솟구친다",
